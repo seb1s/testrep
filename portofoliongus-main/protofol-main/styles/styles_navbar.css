@@ -1,0 +1,55 @@
+
+
+
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.400);
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    min-width: 27%;
+    z-index: 10;
+    font-family: font;
+    border-radius: 0px 0px 20px 20px;
+}
+
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 35px;
+    transition: 0.5s;
+  }
+  
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 35px;
+  }
+  
+  /* Add a color to the active/current link */
+  .navbar a.active {
+    background-color: #00000000;
+    color: rgb(177, 177, 177);
+    border-radius: 35px;
+  }
+
+  @media (width <= 650px) {
+    
+    .navbar{
+      background-color: rgba(0, 0, 0, 0.400);
+      position: fixed;
+      top: -15px;
+      left: 360px;
+      width: 120%;
+      z-index: 10;
+      font-family: font;
+  }
+
+  }

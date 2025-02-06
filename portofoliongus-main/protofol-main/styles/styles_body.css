@@ -1,0 +1,173 @@
+body{
+    background-image: url(/protofol-main/styles/assests/backgr.jpg);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    overflow-x: hidden;
+}
+
+.Title1{
+    display: flex;
+    font-family: font;
+    font-size: 70px;
+    color: aliceblue;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    animation: bottomIn 2s ease forwards;
+}
+
+.content1{
+    position: relative;
+    left: 200px;
+    top: 150px;
+    animation: bottomIn 2s ease forwards;
+}
+
+    .img1{
+    position: relative;
+    top: -50px;
+    border-radius: 50px;
+    transition: 0.3s;
+    }
+
+    .img1:hover {
+       opacity: 0.6;
+    }
+
+    .textC1-1{
+    position: relative;
+    top: -630px;
+    left: -15px;
+    font-size: 40px;
+    color: aliceblue;
+    max-width: 500px;
+    font-family: font;
+    }
+
+.content2{
+    position: relative;
+    top: -486px;
+    left: 687px;
+    animation: bottomIn 2s ease forwards;
+}
+
+    .img2{
+    position: relative;
+    top: -50px;
+    left: -11px;
+    border-radius: 50px;
+    transition: 0.3s;
+    }
+
+    .img2:hover {
+        opacity: 0.6;
+    }
+
+    .textC2-1{
+    position: relative;
+    font-size: 40px;
+    left: -81px;
+    top: -604px;
+    color: aliceblue;
+    font-family: font;
+    }
+
+    .textC2-2{
+    position: relative;
+    top: -230px;
+    left: -12px;
+    font-size: x-large;
+    color: aliceblue;
+    max-width: 350px;
+    font-family: font;
+    }
+
+ html{
+    scroll-behavior: smooth;
+ }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #4d4d4d;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 20px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+    border-radius: 20px;
+}
+
+ @font-face {
+    font-family: font;
+    src: url(fonts/Lexend-Regular.ttf);
+ }
+
+ @keyframes bottomIn{
+    from {transform: translateY(1500px);}
+    to {transform: translateY(0);}
+}
+
+
+
+ @media (width <= 650px) {
+
+    .Title1{
+        position: relative;
+        font-size: 70px;
+        left: 0px;
+        top: 50px;
+        color: aliceblue;
+        font-family: font;
+        text-align: center;
+    }
+
+    .content1{
+        position: relative;
+        left: 50px;
+        top: 150px;
+    }
+
+    .content2{
+        position: relative;
+        top: 106px;
+        left: 61px;
+    }
+
+    .textC2-1{
+        position: relative;
+        font-size: 40px;
+        left: 5px;
+        top: -650px;
+        color: aliceblue;
+        font-family: font;
+    }
+
+    .textC2-2{
+        position: relative;
+        top: -280px;
+        left: -12px;
+        font-size: x-large;
+        color: aliceblue;
+        max-width: 350px;
+        font-family: font;
+    }
+
+    body{
+        background-image: url(/protofol-main/styles/assests/backgr.jpg);
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+        max-width: 412px;
+    }
+
+ }

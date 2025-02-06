@@ -1,0 +1,102 @@
+body{
+    background-image: url(/protofol-main/styles/assests/backgr.jpg);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    overflow-x: hidden;
+}
+
+/* mezi body a html se pise css kod */
+
+.ples{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: -250px;
+    animation: bottomIn 2s ease forwards;
+}
+
+.textWIP{
+    position: relative;
+    display: flex;
+    font-family: font;
+    font-size: 70px;
+    color: aliceblue;
+    justify-content: center;
+    text-align: center;
+    z-index: 9;
+    top: 50px;
+    animation: bottomIn 2s ease forwards;
+}
+
+
+/* a proc? nevim. */
+
+html{
+    scroll-behavior: smooth;
+ }
+
+ ::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #4d4d4d;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 20px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+    border-radius: 20px;
+}
+
+ @font-face {
+    font-family: font;
+    src: url(fonts/Lexend-Regular.ttf);
+ }
+
+ @keyframes bottomIn{
+    from {transform: translateY(1500px);}
+    to {transform: translateY(0);}
+}
+
+@media (width <= 650px) {
+
+    .textWIP{
+        position: relative;
+        display: flex;
+        font-family: font;
+        font-size: 70px;
+        color: aliceblue;
+        justify-content: center;
+        text-align: center;
+        width: 600px;
+        z-index: 9;
+        top: 0px;
+        animation: bottomIn 2s ease forwards;
+    }
+
+    .ples img{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        bottom: 200px;
+        width: 100%;
+        left: 100px;
+    }
+
+    body{
+        background-image: url(/protofol-main/styles/assests/backgr.jpg);
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+        max-width: 412px;
+    }
+
+ }

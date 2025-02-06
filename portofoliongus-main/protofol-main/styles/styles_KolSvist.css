@@ -1,0 +1,99 @@
+body{
+    background-image: url(/protofol-main/styles/assests/backgr.jpg);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 650vh;
+}
+
+.Title{
+    display: flex;
+    font-family: font;
+    font-size: 70px;
+    color: aliceblue;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    animation: bottomIn 2s ease forwards;
+}
+
+.svistImgs{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px 800px;
+    place-items: center;
+    top: 100px;
+    z-index: 9;
+    animation: bottomIn 2s ease forwards;
+}
+
+.svistJmena{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px 800px;
+    place-items: center;
+    top: -1400px;
+    font-family: font;
+    font-size: xx-large;
+    color: aliceblue;
+    animation: bottomIn 2s ease forwards;
+}
+
+.img1{
+    position: relative;
+    top: -50px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.img1:hover {
+    opacity: 0.6;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #4d4d4d;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 20px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+    border-radius: 20px;
+}
+
+@font-face {
+    font-family: font;
+    src: url(fonts/Lexend-Regular.ttf);
+ }
+
+ @keyframes bottomIn{
+    from {transform: translateY(1500px);}
+    to {transform: translateY(0);}
+}
+
+@media (width <= 650px) {
+    .svistImgs{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        top: 100px;
+        z-index: 9;
+        animation: bottomIn 2s ease forwards;
+    }
+    
+    
+}

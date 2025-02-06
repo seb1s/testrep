@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(29, 29, 29);
+}
+
+.Simg1{
+    position: relative;
+}
+
+.domov1{
+    position: relative;
+    color: aliceblue;
+    font-size: xx-large;
+    font-family: font;
+    bottom: -40px;
+    left: -800px;
+}
+
+@font-face {
+    font-family: font;
+    src: url(/protofol-main/styles/fonts/Lexend-Regular.ttf);
+ }
+
+ @media (width <= 650px) {
+    .Simg1{
+        position: relative;
+        max-width: 100%;
+    }
+
+    .domov1{
+        position: relative;
+        color: aliceblue;
+        font-size: xx-large;
+        font-family: font;
+        bottom: 0px;
+        left: 0px;
+    }
+
+ }
